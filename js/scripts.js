@@ -2,11 +2,11 @@ var triangle = function(side1, side2, side3) {
   if ((side1 + side2 < side3) || (side1 + side3 < side2) || (side3 + side2 < side1)) {
     return false;
   } else if ((side1 === side2) && (side3 === side2) && (side1 === side3)) {
-    return "equilateral";
+    return "n equilateral";
   } else if ((side1 === side2) || (side3 === side2) || (side1 === side3)) {
-    return "isosceles";
+    return "n isosceles";
   } else if ((side1 !== side2) && (side3 !== side2) && (side1 !== side3)) {
-    return "scalene";
+    return " scalene";
   }
 };
 
@@ -27,7 +27,7 @@ $(document).ready(function(){
       $(".triangle").show();
     }
 
-    $("#result").show();
+    $("#result").fadeIn();
     event.preventDefault();
 
   })

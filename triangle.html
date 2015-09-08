@@ -9,26 +9,32 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
       <h1>Let me tell you the type of triangle, ok?</h1>
+      </div>
+
+      <div class="jumbotron">
       <h3>Enter the length of each side:</h3>
+      <br>
 
       <form id="triangle">
         <div class="form-group">
           <label for="side1">Side 1:</label>
-          <input id="side1" type="text">
-
+          <input id="side1" type="text" required="true">
+          <br>
           <label for="side2">Side 2:</label>
-          <input id="side2" type="text">
-
+          <input id="side2" type="text" required="true">
+          <br>
           <label for="side3">Side 3:</label>
-          <input id="side3" type="text">
+          <input id="side3" type="text" required="true">
         </div>
 
-        <button type="submit" class="btn">Read fortune!</button>
+        <button class="btn-link" type="submit">&#128302;</button>
       </form>
+    </div>
 
       <div id="result">
-        <p>It is <span class="not"></span> a <span class="triangle"></span> triangle.</p>
+        <h4>It is <span class="not"></span> a<span class="triangle"></span> triangle.</h4>
 
       </div>
     </div>

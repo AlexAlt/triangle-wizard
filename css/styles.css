@@ -1,3 +1,15 @@
+.container {
+  text-align: center;
+}
+
 #result {
   display: none;
+}
+
+button {
+  font-size: 10em;
+}
+
+.btn-link:hover {
+  text-decoration: none;
 }
