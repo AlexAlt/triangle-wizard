@@ -13,3 +13,7 @@ button {
 .btn-link:hover {
   text-decoration: none;
 }
+
+label {
+  font-size: 1.5em;
+}
