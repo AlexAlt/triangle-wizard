@@ -2,10 +2,10 @@ var triangle = function(side1, side2, side3) {
   if ((side1 + side2 < side3) || (side1 + side3 < side2) || (side3 + side2 < side1)) {
     return false;
   } else if ((side1 === side2) && (side3 === side2) && (side1 === side3)) {
-    return true;
+    return "equilateral";
   } else if ((side1 === side2) || (side3 === side2) || (side1 === side3)) {
-    return true;
+    return "isosceles";
   } else if ((side1 !== side2) && (side3 !== side2) && (side1 !== side3)) {
-    return true;
+    return "scalene";
   }
 };
